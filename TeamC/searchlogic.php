@@ -43,12 +43,18 @@ try {
 	// (3) 値をセット
 	if($title == '') {
 		$title = "%";
+	} else {
+		$title = "%$title%";
 	}
 	if($writer == '') {
 		$writer = "%";
+	}else {
+		$writer = "%$writer%";
 	}
 	if($keyword == '') {
 		$keyword = "%";
+	} else {
+		$keyword = "%$keyword%";
 	}
 	if($generation == '') {
 		$generation = "%";
